@@ -32,7 +32,7 @@ router.post('/user-ret',function(req,res){
             res.status(501).json({message: 'Error retrieving users'});
          }
          else {
-            if(users==null) {res.status(501).json({message: 'Error retrieving users'});  }
+            if(users===null) {res.status(501).json({message: 'Error retrieving users'});  }
             
             console.log("successfully retrieved users");
             console.log(users);
