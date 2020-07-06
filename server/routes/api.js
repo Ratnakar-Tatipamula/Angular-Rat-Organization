@@ -33,7 +33,7 @@ router.post('/user-ret',function(req,res){
          }
          else {
             if(users==null) {res.status(501).json({message: 'Error retrieving users'});  }
-            alert("No User Found");
+            
             console.log("successfully retrieved users");
             console.log(users);
            // res.send(users);
